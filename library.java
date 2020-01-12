@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class library {
 
-
 public static void main(String[] args) {
-
-    @SuppressWarnings("resource")
+	
 	Scanner input = new Scanner(System.in);
 
-    System.out.println("********************Welcome to the Library!********************");
+    System.out.println("Welcome to the Library!");
     
     books ob = new books();
     
@@ -37,8 +35,12 @@ public static void main(String[] args) {
                 ob.showAllBooks();
                 break;
                 
+            case 4:
+            	ob.checkOutBook();
+            	break; 
+                
             default:
-                System.out.println("CHOICE SHOULD BE BETWEEN 0 TO 3.");
+                System.out.println("CHOICE SHOULD BE BETWEEN 0 TO 4.");
 
         }
 
@@ -46,6 +48,10 @@ public static void main(String[] args) {
     while (choice!=0);
 }
 }
+
+
+
+
 
 
 
